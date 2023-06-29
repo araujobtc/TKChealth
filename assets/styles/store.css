@@ -1,0 +1,16 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#prodInd{
+    display: flex;
+    flex-direction: column;
+   
+}
