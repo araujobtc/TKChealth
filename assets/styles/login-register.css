@@ -1,0 +1,16 @@
+/*css da cadastro.html*/
+.radio{
+    display: none;
+}
+.pessoa{
+    background-color: brown;
+    padding: 9px;
+    border-radius: 10px;
+}
+#content-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+/*css da login.html*/
