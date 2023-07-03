@@ -1,3 +1,28 @@
+/*tentativa falha da barra navegação*/
+a:any-link{
+    text-decoration: none;
+}
+header{
+    background: #c7e5fc;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    float: right;
+
+}
+nav a{
+    padding: 10px;
+    background-color: rgb(165, 42, 42);
+    border-radius: 15px;
+    float: right;
+}
+#box-logo{
+    float: left;
+    padding: 10px;
+}
 /*css da cadastro.html*/
 .radio{
     display: none;
@@ -14,3 +39,125 @@
 }
 
 /*css da login.html*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;/*pesquisar*/
+}
+body{
+    overflow: hidden;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(to bottom, #f1f4f9, #c7e5fc) ;
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1)/*pesquisar*/{
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: rgb(255, 104, 242);
+}
+section .color:nth-child(2)/*pesquisar*/{
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: rgba(231, 248, 73, 0.747);
+}
+section .color:nth-child(3)/*pesquisar*/{
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 162, 85);
+}
+.box{
+    position: relative;
+}
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    
+}
+.form h2{
+    position: relative;
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.form h2::before{
+    content: '';
+    position: relative;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #ffff;
+}
+.form .inputBox{
+    width: 100%;
+    margin-top: 20px;
+}
+.form .inputBox input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.form .inputBox input::placeholder{
+    color: #fff;
+}
+.form .inputBox input[type="submit"]{
+    background: #ffff;
+    color: #666;
+    max-width: 100px;
+    cursor:pointer;
+    margin-bottom: 20px;
+    font-weight: 600; 
+    padding: 16px;
+}
+.forget{
+    margin-top: 5px;
+    color: #fff;
+}
+.forget a{
+    color:#fff;
+    font-weight: 600;
+}
+
