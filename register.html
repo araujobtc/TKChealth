@@ -25,23 +25,34 @@
         </nav>
     </header>
 
-    <div id="content-cadastro">
-	<form>
-	        Nome completo<br><input type="text"><br>
-	        Data de nascimento<br><input type="text"><br>
-	        Email<br><input type="email"><br>
-	        Senha<br><input type="password"><br>
-	        Confirme sua senha<br><input type="password"><br>
-	        <p>
-	            <input class="radio" type="radio" id="fisica" name="pessoa" value="fisica">
-	            <label class="pessoa" for="fisica">Pessoa física</label>
-	            <input class="radio" type="radio" id="juridica" name="pessoa" value="juridica">
-	            <label class="pessoa" for="juridica">Pessoa jurídica</label>
-	        </p>
-	
-	        <button>Enviar</button>
-	</form>
-    </div>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+	<div class="color"></div>
+        <div class="box">
+            <section class="container">
+                <div class="form">
+                    <h2>Cadastro</h2>
+                    <div class="inputBox">
+                        <input placeholder="Nome completo" type="text"><br>
+                        <input placeholder="Data de nascimento" type="text"><br>
+                        <input placeholder="Email" type="email"><br>
+                        <input placeholder="Senha" type="password"><br>
+                        <input placeholder="Confirme sua senha" type="password"><br>
+                        <div id="fis_jur">
+                                <input class="radio" type="radio" id="fisica" name="pessoa" value="fisica">
+                                <input class="radio" type="radio" id="juridica" name="pessoa" value="juridica">
+                                <label onclick="click()" class="pessoa" for="fisica">Pessoa física</label>
+                                <label onclick="click()" class="pessoa" for="juridica">Pessoa jurídica</label>
+                        </div>
+                        <input id="cadastrar" type="submit" value="Cadastrar">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
 
     <footer id="box-footer">
         <div id="extra-infos">
