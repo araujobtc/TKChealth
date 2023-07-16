@@ -81,6 +81,26 @@ body{
 				inset -5px -5px 5px rgb(255,255,255, .3);
 }
 
+/* barra de rolagem */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(153, 153, 153, 0.548) rgba(100, 100, 100, 0.733);
+}
+  
+*::-webkit-scrollbar {
+  width: 7px;
+}
+  
+*::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+  
+*::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 166, 0, 0);
+}
+
 /* background */
 section .color{
     position: absolute;
@@ -112,7 +132,9 @@ section .color:nth-child(3){
 #container{
 	min-height: 87vh;
 }
-
+*:any-link{
+  text-decoration: none;
+}
 /* footer */
 
 #box-footer{
