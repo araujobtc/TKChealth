@@ -1,58 +1,25 @@
-/*tentativa falha da barra navegação*/
 a:any-link{
     text-decoration: none;
 }
-header{
-    background: #c7e5fc;
-    display: flex;
-    padding: 20px;
-    width: 100%;
+body{
+    overflow: hidden;
 }
 nav{
-    display: flex;
-    float: right;
-
+    top: 0;
+    z-index: 10;
+    position: sticky;
 }
-nav a{
-    padding: 10px;
-    background-color: rgb(165, 42, 42);
-    border-radius: 15px;
-    float: right;
-}
-#box-logo{
-    float: left;
-    padding: 10px;
-}
-/*css da cadastro.html*/
-.radio{
-    display: none;
-}
-.pessoa{
-    background-color: brown;
-    padding: 9px;
-    border-radius: 10px;
-}
-#content-cadastro{
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-}
-
-/*css da login.html*/
 *{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;/*pesquisar*/
 }
-body{
-    overflow: hidden;
-}
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     background:linear-gradient(to bottom, #f1f4f9, #c7e5fc) ;
 }
 section .color{
@@ -76,8 +43,16 @@ section .color:nth-child(3)/*pesquisar*/{
     bottom: 50px;
     right: 100px;
     width: 300px;
-    height: 300px;
+    height: 450px;
     background: rgb(255, 162, 85);
+}
+section .color:nth-child(4){
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    background: rgba(163, 21, 21, 0.747);
 }
 .box{
     position: relative;
@@ -85,8 +60,8 @@ section .color:nth-child(3)/*pesquisar*/{
 .container{
     position: relative;
     width: 400px;
-    min-height: 400px;
-    background: rgba(255, 255, 255, 0.1);
+    min-height: 350px;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -97,37 +72,25 @@ section .color:nth-child(3)/*pesquisar*/{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
-.form{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    
-}
 .form h2{
     position: relative;
-    color:#ffffff;
+    color: #797979;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 40px;
+    text-align: center;
+    margin-top: 30px;
 }
-.form h2::before{
-    content: '';
-    position: relative;
-    left: 0;
-    bottom: -10px;
-    width: 80px;
-    height: 4px;
-    background: #ffff;
-}
+
 .form .inputBox{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .form .inputBox input{
+    margin: 5px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.5);
     border: none;
     outline: none;
     padding: 10px 20px;
@@ -137,11 +100,11 @@ section .color:nth-child(3)/*pesquisar*/{
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 16px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #797979;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 .form .inputBox input::placeholder{
-    color: #fff;
+    color: #797979;
 }
 .form .inputBox input[type="submit"]{
     background: #ffff;
@@ -149,15 +112,56 @@ section .color:nth-child(3)/*pesquisar*/{
     max-width: 100px;
     cursor:pointer;
     margin-bottom: 20px;
-    font-weight: 600; 
+    font-weight: 600;
     padding: 16px;
+}
+.form .inputBox input[type="submit"]:hover{
+    background: #c7e5fc;
 }
 .forget{
     margin-top: 5px;
-    color: #fff;
+    color: #666;
+    margin-bottom: 20px;
 }
 .forget a{
-    color:#fff;
+    color:#66666688;
     font-weight: 600;
 }
+.forget a:hover{
+    color: #000000;
+}
 
+.form .inputBox #cadastrar{
+    background: #ffff;
+    color: #666;
+    max-width: 150px;
+    cursor:pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+    padding: 16px;
+    
+    
+}
+
+.form .inputBox #cadastrar:hover{
+    background: #c7e5fc;
+}
+
+#fis_jur{
+    text-align: center;
+    margin: 20px 0 35px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#fis_jur button{
+    padding: 7px;
+    background: #a8a8a8;
+    border-radius: 15px;
+}
+#fis_jur button:hover{
+
+    background: #c7e5fc;
+
+}
