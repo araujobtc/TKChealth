@@ -1,0 +1,48 @@
+nav{
+    top: 0;
+    z-index: 1;
+    position: sticky;
+}
+a:any-link{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*parte sobre a empresa */
+#nome_marca{
+    width: 50%;
+    font-size: large;
+}
+.divisoria{
+    width: 100%;
+    margin-top: 10px;
+    display: inline;
+    margin-left: 10px;
+}
+.divisoria #empresa-home{
+    display: flex;
+    flex-direction: row;
+}
+#prod_lancamento{
+    margin-top: 10px;
+    display: inline;
+    
+}
+#prod-lancamento div{
+    width: 30%;
+}
+#img-prod{
+    width: 30%;
+}
+
+
+
+*{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
