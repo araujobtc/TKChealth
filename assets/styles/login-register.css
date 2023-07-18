@@ -4,11 +4,7 @@ a:any-link{
 body{
     overflow: hidden;
 }
-nav{
-    top: 0;
-    z-index: 10;
-    position: sticky;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -20,72 +16,23 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    background:linear-gradient(to bottom, #f1f4f9, #c7e5fc) ;
+    padding: 15px;
 }
-section .color{
-    position: absolute;
-    filter: blur(150px);
-}
-section .color:nth-child(1)/*pesquisar*/{
-    top: -350px;
-    width: 600px;
-    height: 600px;
-    background: rgb(255, 104, 242);
-}
-section .color:nth-child(2)/*pesquisar*/{
-    bottom: -150px;
-    left: 100px;
-    width: 500px;
-    height: 500px;
-    background: rgba(231, 248, 73, 0.747);
-}
-section .color:nth-child(3)/*pesquisar*/{
-    bottom: 50px;
-    right: 100px;
-    width: 300px;
-    height: 450px;
-    background: rgb(255, 162, 85);
-}
-section .color:nth-child(4){
-    bottom: 0;
-    right: 0;
-    width: 500px;
-    height: 500px;
-    position: fixed;
-    background: rgba(163, 21, 21, 0.747);
-}
-.box{
-    position: relative;
-}
-.container{
-    position: relative;
-    width: 400px;
-    min-height: 350px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
+
 .form h2{
     position: relative;
     color: #797979;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .form .inputBox{
     width: 100%;
-    margin-top: 10px;
+    margin-top: px;
 }
 .form .inputBox input{
     margin: 5px;
@@ -161,7 +108,6 @@ section .color:nth-child(4){
     border-radius: 15px;
 }
 #fis_jur button:hover{
-
     background: #c7e5fc;
 
 }
