@@ -18,6 +18,7 @@ body{
     align-items: center;
     justify-content: center;
 	background-color: #eee;
+    overflow-x: hidden;
 }
 
 #box-nav-bar{
@@ -31,6 +32,9 @@ body{
 	top: 0;
 	background-color: transparent;
 	backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 /* logo */
 #box-logo a{
@@ -104,27 +108,52 @@ body{
 /* background */
 section .color{
     position: absolute;
-    filter: blur(170px);
+    filter: blur(150px);
 }
 section .color:nth-child(1){
-    top: -350px;
-    width: 600px;
-    height: 600px;
-    background: rgb(255, 104, 242);
+    top: 0;
+    left: -100px;
+    width: 60%;
+    height: 50%;
+    position: fixed;
+    background: rgb(73, 235, 154);
 }
 section .color:nth-child(2){
-    bottom: -150px;
-    left: 100px;
-    width: 500px;
-    height: 500px;
-    background: rgba(231, 248, 73, 0.747);
+    bottom: 10%;
+    left: 20%;
+    width: 35%;
+    height: 50%;
+    position: fixed;
+    background: rgba(69, 201, 17, 0.479);
 }
 section .color:nth-child(3){
-    bottom: 50px;
-    right: 100px;
-    width: 300px;
-    height: 450px;
-    background: rgb(255, 162, 85);
+    bottom: 15%;
+    right: 0;
+    width: 70%;
+    height: 20%;
+    position: fixed;
+    background: rgb(24, 231, 5);
+}
+.box{
+    position: relative;
+}
+.container{
+    position: relative;
+    width: 90%;
+    min-height: 350px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content:space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* content */
@@ -158,6 +187,7 @@ section .color:nth-child(3){
 
 /* footer */
 
+
 #box-footer{
 	min-height: 100px;
     width: 100vw;
@@ -166,9 +196,25 @@ section .color:nth-child(3){
 	align-items: center;
 	justify-content: center;
 	bottom: 0;
-	background-color: #888;
+	background-color: #888888a6;
+    margin-top: 30px;
+    z-index: 1;
 }
 
-#extra-infos p{
+#dev-info p{
 	color: #f2ddcc;
+    display: inline;
+
+}
+#dev-info{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
 }
