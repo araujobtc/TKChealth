@@ -116,7 +116,7 @@ section .color:nth-child(1){
     width: 60%;
     height: 50%;
     position: fixed;
-    background: rgb(73, 235, 154);
+    background: #b39f7a;
 }
 section .color:nth-child(2){
     bottom: 10%;
@@ -124,7 +124,7 @@ section .color:nth-child(2){
     width: 35%;
     height: 50%;
     position: fixed;
-    background: rgba(69, 201, 17, 0.479);
+    background: #FFDAB9;
 }
 section .color:nth-child(3){
     bottom: 15%;
@@ -132,7 +132,7 @@ section .color:nth-child(3){
     width: 70%;
     height: 20%;
     position: fixed;
-    background: rgb(24, 231, 5);
+    background: #c16512;
 }
 .box{
     position: relative;
