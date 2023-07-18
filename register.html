@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/index.css">
     <link rel="stylesheet" href="assets/styles/login-register.css">
-    <title>Padrão</title>
+
+    <title>Cadastro</title>
 </head>
 <body>
+
     <header id="box-nav-bar">
         <div id="box-logo">
             <a href="index.html">
@@ -18,10 +18,10 @@
             </a>
         </div>
         <nav id="nav-bar">
-            <a href="index.html" rel="" class="pages-bar" id="first-item">Início</a>
-            <a href="store.html" rel="" class="pages-bar" id="2nd-items">Loja</a>
-            <a href="login.html" rel="" class="pages-bar" id="4th-items">Login</a>
-            <a href="about.html" rel="" class="pages-bar" id="3rd-items">Sobre</a>
+            <a href="index.html" class="pages-bar" id="first-item">Início</a>
+            <a href="store.html" class="pages-bar" id="2nd-items">Loja</a>
+            <a href="login.html" class="pages-bar" id="4th-items">Login</a>
+            <a href="about.html" class="pages-bar" id="3rd-items">Sobre</a>
         </nav>
     </header>
 
@@ -29,7 +29,6 @@
         <div class="color"></div>
         <div class="color"></div>
         <div class="color"></div>
-	<div class="color"></div>
         <div class="box">
             <section class="container">
                 <div class="form">
@@ -41,10 +40,8 @@
                         <input placeholder="Senha" type="password"><br>
                         <input placeholder="Confirme sua senha" type="password"><br>
                         <div id="fis_jur">
-                                <input class="radio" type="radio" id="fisica" name="pessoa" value="fisica">
-                                <input class="radio" type="radio" id="juridica" name="pessoa" value="juridica">
-                                <label onclick="click()" class="pessoa" for="fisica">Pessoa física</label>
-                                <label onclick="click()" class="pessoa" for="juridica">Pessoa jurídica</label>
+                            <button id="fisica">Pessoa Física</button>
+                            <button id="juridica">Pessoa Jurídica</button>
                         </div>
                         <input id="cadastrar" type="submit" value="Cadastrar">
                     </form>
@@ -53,12 +50,29 @@
         </div>
     </section>
 
-
     <footer id="box-footer">
-        <div id="extra-infos">
-			<p>DEVs: Bárbara Miguez, Jenifer, Gonçalves, Inacio Ribeiro, Isabelle Araujo</p>
+        <div id="dev-info">
+            <div class="social-links">
+                <a href="https://github.com/araujobtc" target="external" class="github-link"><img src="https://img.shields.io/badge/-GitHub-%23d87b7e50?style=for-the-badge&logo=github&logoColor=white" alt="link com logo github"></a>
+                <p>&copy; araujobtc</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/jengoncaltto" target="external" class="github-link"><img src="https://img.shields.io/badge/-GitHub-%23d87b7e50?style=for-the-badge&logo=github&logoColor=white" alt="link com logo github"></a>
+                <p>&copy; jengoncaltto</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/BarbaraMig" target="external" class="github-link"><img src="https://img.shields.io/badge/-GitHub-%23d87b7e50?style=for-the-badge&logo=github&logoColor=white" alt="link com logo github"></a>
+                <p>&copy; Babimig23</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/araujobtc" target="external" class="github-link"><img src="https://img.shields.io/badge/-GitHub-%23d87b7e50?style=for-the-badge&logo=github&logoColor=white" alt="link com logo github"></a>
+                <p>&copy; Inacio</p>
+            </div>
+            
+            
+          
         </div>
     </footer>
-
+    <script src="assets/scripts/cadastro.js"></script>
 </body>
 </html>
