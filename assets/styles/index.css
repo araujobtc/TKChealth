@@ -130,11 +130,32 @@ section .color:nth-child(3){
 /* content */
 
 #container{
-	min-height: 87vh;
+	min-height: 84vh;
 }
 *:any-link{
   text-decoration: none;
 }
+
+
+
+#marcalogo{
+	text-align: center;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 166, 0, 0);
+    margin: 20px;
+}
+
+
+
+#trezentos{
+	width: 75%;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 166, 0, 0);
+    margin: 20px;
+}
+
+
+
 /* footer */
 
 #box-footer{

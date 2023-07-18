@@ -1,0 +1,22 @@
+
+h1, h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+    color: #20331B;
+}
+p{
+    color: #20331B;
+}
+
+#images{
+    text-align: center;
+}
+#img {
+   
+    width: 50%;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 166, 0, 0);
+    margin: 30px;
+}
