@@ -108,12 +108,12 @@ body{
 /* background */
 section .color{
     position: absolute;
-    filter: blur(150px);
+    filter: blur(180px);
 }
 section .color:nth-child(1){
     top: 0;
     left: -100px;
-    width: 60%;
+    width: 40%;
     height: 50%;
     position: fixed;
     background: #b39f7a;
@@ -130,9 +130,9 @@ section .color:nth-child(3){
     bottom: 15%;
     right: 0;
     width: 70%;
-    height: 20%;
+    height: 50%;
     position: fixed;
-    background: #c16512;
+    background: #c16512af;
 }
 .box{
     position: relative;
